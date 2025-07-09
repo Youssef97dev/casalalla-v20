@@ -46,7 +46,7 @@ const About = () => {
           <p className="text-[14px] lg:text-[16px] font-light lg:font-thin italic tracking-wider leading-[28px]  text-justify py-1">
             {t("about.content_3")}
           </p>
-          <p className="text-[14px] lg:text-[16px] font-light lg:font-thin italic tracking-wider leading-[28px]  text-justify py-1">
+          <p className="text-[14px] lg:text-[16px] font-normal lg:font-thin italic tracking-wider leading-[28px]  text-left py-1">
             {t("about.content_4")}
           </p>
           <Link
