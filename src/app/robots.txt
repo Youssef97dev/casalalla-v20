@@ -1,0 +1,6 @@
+User-Agent: *
+Allow: /
+Disallow: /private/
+Disallow: /fonts/
+
+Sitemap: https://casalallatakerkoust.com/sitemap.xml
