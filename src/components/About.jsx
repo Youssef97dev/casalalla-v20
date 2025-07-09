@@ -46,6 +46,9 @@ const About = () => {
           <p className="text-[14px] lg:text-[16px] font-light lg:font-thin italic tracking-wider leading-[28px]  text-justify py-1">
             {t("about.content_3")}
           </p>
+          <p className="text-[14px] lg:text-[16px] font-light lg:font-thin italic tracking-wider leading-[28px]  text-justify py-1">
+            {t("about.content_4")}
+          </p>
           <Link
             href="/booking"
             className="mt-4 py-2 px-8 uppercase tracking-widest border border-primary_2 text-primary_2 rounded-lg text-[12px] leading-[34px] hover:bg-primary_2 hover:text-white duration-200 transition-all ease-out font-azahra"
