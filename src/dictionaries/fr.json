@@ -1,12 +1,13 @@
 {
   "navbar": {
     "home": "Accueil",
-    "about": "À propos",
+    "restaurant": "Restaurant",
     "gallery": "Galerie",
     "events": "Événements",
     "activities": "Activités",
+    "experiences": "Experiences",
     "menu": "https://casalalla.blogspot.com/2023/08/blog-post.html",
-    "lang": "/france.png",
+    "lang": "Français",
     "reservation": "Réservation",
     "cart": "La Carte"
   },

@@ -3,11 +3,13 @@ import { useEffect } from "react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import { useTranslation } from "react-i18next";
+import Navbar from "./Navbar";
 
 const Hero = () => {
   const { t } = useTranslation();
   return (
     <div id="hero" className="relative w-full h-full lg:h-screen">
+      <Navbar />
       <div className="w-full h-full px-3 py-3 block lg:hidden">
         <video
           className="object-cover h-[90vh] w-full  rounded-md"
