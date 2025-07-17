@@ -48,7 +48,7 @@ const Activities = () => {
   return (
     <div
       id="activities"
-      className="w-full min-h-screen flex md:flex-row-reverse flex-col p-3 gap-3"
+      className="w-full min-h-screen flex md:flex-row flex-col p-3 gap-3"
     >
       <div className="relative w-full">
         {isMobile ? (

@@ -40,10 +40,10 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`absolute z-50 w-full transition-colors duration-300 px-3 bg-transparent text-white`}
+      className={`absolute z-50 w-full transition-colors duration-300 px-3 bg-transparent text-white `}
     >
       <div className="w-full flex justify-between items-center mx-auto px-5 lg:px-14">
-        <div className="w-full flex justify-start items-center gap-10">
+        <div className="w-full flex justify-start items-center gap-10 lg:pt-12">
           <div
             className={`pb-1 cursor-pointer text-white`}
             onClick={() => setIsOpen(true)}
@@ -92,7 +92,7 @@ const Navbar = () => {
             )}
           </div>
         </div>
-        <div className="w-full flex justify-center items-center">
+        <div className="w-full flex justify-center items-center lg:hidden">
           <Image
             src={"/logo-2.png"}
             width={300}
@@ -101,14 +101,14 @@ const Navbar = () => {
             className={`mt-2 w-24 lg:w-36 `}
           />
         </div>
-        <div className="w-full lg:flex hidden justify-end items-center  text-white cursor-pointer">
+        {/*<div className="w-full lg:flex hidden justify-end items-center  text-white cursor-pointer">
           <Link
             href="#"
             className={`tracking-[0.2em] font-light text-[14px] leading-[34px] py-2 px-4  rounded text-background bg-transparent hover:bg-background hover:text-primary border border-background`}
           >
             Réservations
           </Link>
-        </div>
+        </div>*/}
         <div
           className="w-full flex justify-end items-center relative lg:hidden"
           onClick={() => setIsDropdownOpen(!isDropdownOpen)}
@@ -178,6 +178,9 @@ const Navbar = () => {
 
               <li className="pb-3 border-b border-bg_navbar">
                 <Link href="#events">{t("navbar.events")}</Link>
+              </li>
+              <li className="pb-3 border-b border-bg_navbar">
+                <Link href="#privatization">{t("navbar.privatization")}</Link>
               </li>
               <li className="pb-3 border-b border-bg_navbar">
                 <Link href="#activities">{t("navbar.activities")}</Link>

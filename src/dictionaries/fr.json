@@ -9,7 +9,8 @@
     "menu": "https://casalalla.blogspot.com/2023/08/blog-post.html",
     "lang": "Français",
     "reservation": "Réservation",
-    "cart": "La Carte"
+    "cart": "La Carte",
+    "privatization": "Privatisation"
   },
   "hero": {
     "text_1": "Situé au seuil du paysage impressionnant du Lac Lalla Takerkoust.",
@@ -27,6 +28,11 @@
     "title": "Casa Lalla est un espace où les visiteurs peuvent manger, boire et célébrer",
     "content_1": "Nos espaces sont conçus pour des moments de festivité et de pleine conscience, chacun imprégné d’un potentiel énergétique unique. L’ivresse de danser pieds nus dans le sable, la joie de conversations profondes autour d’une table communautaire, ou l’émerveillement partagé devant un set live immersif — c’est ici que tout cela prend vie.",
     "content_2": "Notre club privé et hôtel sont construits avec le même amour pour l'esthétique élevée, la nature et le design minimaliste qui nous unissent, et attirent des membres et invités partageant ces affinités."
+  },
+  "privatization": {
+    "title": "Événements privés chez casa lalla takerkoust",
+    "content_1": "Chez Casa lalla Takerkoust, on vit des instants extravagants où la joie d'être ensemble et les plaisirs gourmands suspendent le cours du temps. Casa lalla accueille aussi les plus belles célébrations.",
+    "content_2": "Événements privé, lancements de produits, mariages, anniversaire... chacun peut exprimer pleinement ici sa vision Alla Grande! La promesse d'un événement placé sous le signe de la Dolce Vita et de la fête !"
   },
   "activities": {
     "title": "Casa Lalla Takerkoust offert des expériences uniques",

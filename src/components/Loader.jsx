@@ -10,6 +10,7 @@ import Activities from "./Activities";
 import Contact from "./Contact";
 import Footer from "./Footer";
 import Kitchen from "./Kitchen";
+import Privatization from "./Privatization";
 
 const Loader = () => {
   const [isClient, setIsClient] = useState(false);
@@ -28,6 +29,7 @@ const Loader = () => {
           <Gallery />
           <About />
           <Events />
+          <Privatization />
           <Activities />
           <Kitchen />
           <Contact />

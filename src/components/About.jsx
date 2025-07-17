@@ -18,7 +18,7 @@ const About = () => {
 
   return (
     <div
-      id="about"
+      id="restaurant"
       className="w-full h-full lg:h-screen flex md:flex-row-reverse flex-col-reverse p-3 gap-3"
     >
       <div className="relative w-full">
