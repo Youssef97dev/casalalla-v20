@@ -1,5 +1,5 @@
 "use client";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import { useTranslation } from "react-i18next";
@@ -7,19 +7,35 @@ import Navbar from "./Navbar";
 
 const Hero = () => {
   const { t } = useTranslation();
+  const [offsetY, setOffsetY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setOffsetY(window.pageYOffset);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   return (
-    <div id="hero" className="relative w-full h-full lg:h-screen">
+    <div
+      id="hero"
+      className="relative w-full h-[95vh] lg:h-screen overflow-hidden"
+    >
       <Navbar />
-      <div className="w-full h-full px-3 py-3 block lg:hidden">
-        <video
-          className="object-cover h-[90vh] w-full  rounded-md"
-          autoPlay
-          loop
-          muted
-        >
-          <source src="/hero_video.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+      {/* Parallax Image Container */}
+      <div className="absolute w-full h-full inset-0 -z-10 block lg:hidden px-3 py-3">
+        <Image
+          src="https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto/v1/CasaLalla-VNor/q2nzpahlmh9ptokalfbk"
+          alt="jet ski lalla takerkoust, casa lalla takerkoust menu, quad lalla takerkoust, lalla takerkoust agafay"
+          height={2000}
+          width={2000}
+          className="object-cover h-full w-full rounded-md"
+          style={{
+            transform: `translateY(${offsetY * 0.8}px)`,
+            willChange: "transform",
+          }}
+        />
       </div>
       <div className="w-full h-full px-3 py-3 hidden lg:block">
         <Image
